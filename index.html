@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>export image animation</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="bigcontainer">
+    <div class="container">
+        <img src="./1.jpg" alt="">
+        <div class="overlay">
+            <p class="value">0%</p>
+        </div>
+    </div>
+    <div class="resolution">
+        <p>resolution</p>
+        <input type="range" min="3" max="15" value="6" id="range">
+        <div class="qualities">
+            <p>240p</p>
+            <p>360p</p>
+            <p>480p</p>
+            <p>720p</p>
+            <p>1080p</p>
+        </div>
+    </div>
+    <h3 class="state">Exporting...</h3>
+    <p class="sizemessage">Estimated size is <span class="size">6</span>mb</p>
+    <button>
+        <i id="buttonicon" class="fa-solid fa-upload"></i>
+        <span class="buttontext">Export To Device</span>
+    </button>
+    <div class="socialicons">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-tiktok"></i>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

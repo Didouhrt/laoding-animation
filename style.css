@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=IBM+Plex+Serif:wght@300;400&family=Pacifico&family=Playfair+Display&family=Poppins:wght@100&family=Roboto:wght@100;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'roboto';
+  background: #000;
+}
+.bigcontainer{
+  color: #aaa;
+  display: grid;
+  gap: 1rem;
+  width: 250px;
+}
+.container{
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+img,.overlay{
+  position: absolute;
+  width: 96%;height: 96%;
+  top: 2%;left: 2%;
+  object-fit: cover;
+}
+.overlay{
+  display: none;
+  place-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: rgb(0,0,0,.5);
+}
+input[type='range']{
+  width: 100%;
+  height: 2px;
+  margin-block: 1rem;
+  accent-color: #038888;
+  cursor: pointer;
+}
+.qualities{
+  display: flex;
+  justify-content: space-between;
+}
+.state{
+  text-align: center;
+  color: #fff;
+  display: none;
+}
+button{
+  background: #038888;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: .5rem;
+  cursor: pointer;
+  transition: .3s ease;
+}
+button.exporting{
+  cursor: progress;
+  background: #79e9e9;
+}
+.exporting:hover{
+  background: #79e9e9;
+}
+button.endexport{
+  background: #f9fcfc;
+  color: #000;
+}
+.endexport:hover{
+  background: #f3f7f7;
+  transform: scale(1.03);
+}
+button:hover{
+  background: #006969;
+}
+.socialicons{
+  display: none;
+  gap: 2rem;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.socialicons i{
+  border-radius: 50%;
+  padding: .3rem;
+  transition: .3s ease;
+}
+.socialicons i:hover{
+  background: #fff;
+  color: #006969;
+  cursor: pointer;
+}
